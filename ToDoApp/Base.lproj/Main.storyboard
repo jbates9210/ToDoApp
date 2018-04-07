@@ -47,6 +47,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="To Do List" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="table" destination="7sj-4P-UY4" id="KCt-43-gzy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,6 +78,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="wml-Jw-Cpo"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6m-9y-Bvo">
                                 <rect key="frame" x="142" y="193" width="90" height="30"/>
@@ -92,6 +98,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Add:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8DO-qQ-2bI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,6 +120,9 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add An Item" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="itemTextField" destination="DPI-v2-9Rj" id="KAH-x0-KjD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
